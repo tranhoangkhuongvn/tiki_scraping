@@ -39,7 +39,10 @@ badge_benefit_url = 'https://salt.tikicdn.com/ts/upload/ba/4e/6e/26e9f2487e9f49b
 def get_tiki_data(url):
 	failed_count = 0
 	while True:
-		r = requests.get(url, headers=headers)
+		try:
+			r = requests.get(url, headers=headers)
+		except:
+			return None
 		# r.text is a HTML file so we will use html.parser
 		soup = BeautifulSoup(r.text, 'html.parser')
 		# All occurences of the products in that page
