@@ -19,3 +19,5 @@
 
 - This week's challenge involves a lot of time to scrape sub-categories and the product in each sub-categories
 - However we can reuse the code from last week to do iterative update for each sub-categories
+- We splitted the list of categories into 2 sublist and run them simultaneously
+- For each subcategories we query only 2 pages to make things simple
