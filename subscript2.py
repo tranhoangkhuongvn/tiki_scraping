@@ -211,7 +211,7 @@ if __name__ == '__main__':
 	# read out the data_subcat and numpy list
 	data_subcat = pd.read_csv('data_subcat.csv')
 	print(data_subcat.head(10))
-	id_list = np.load('list1.npy')
+	id_list = np.load('list2.npy')
 	for each_id in id_list:
 		#extract url:
 		page_url = data_subcat.loc[each_id, ]['url']
